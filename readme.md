@@ -1,6 +1,6 @@
 
 # Bootcamp Sysmap
-Salve pessoas vida longa e próspera  🖖, bem como o gabriel aborodu alguns conceitos iniciais sobre o git e Github.
+Salve pessoas vida longa e próspera  🖖, bem como o gabriel abordou alguns conceitos iniciais sobre o git e Github.
 Resolve fazer este readme,com alguns conteúdos  que podem ajudar quem está  começando  no mundo da programação, com cursos e livros que eu considero foda.
 Foram os livros e os cursos disponíveis  ai tem milhares de outros cursos.
 ## 🔗  cursos e livros

@@ -1,0 +1,80 @@
+main {
+  padding: 20px 20px 50px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f2c5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(5, 5, 6);
+  background-color: #e3dfb5;
+  font-size: 1.5em;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 0 20px;
+  border-radius: 5px;
+}
+
+.game {
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  margin: 0 auto;
+  background-color: rgba(148, 219, 235, 0.622);
+}
+
+.card {
+  aspect-ratio: 3/4;
+  width: 100%;
+  position: relative;
+  transition: all 1s;
+  transform-style: preserve-3d;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+}
+
+.reveal-card {
+  transform: rotateY(180deg);
+}
+
+.disabled-card {
+  filter: saturate(0);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 920px) {
+  .game {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  border: 2px solid efefed;
+  transition: all 400ms ease;
+}
+
+.front {
+  transform: rotateY(180deg);
+  background-color: #d3b950;
+}
+
+.back {
+  background-image: url("../img/face-back.jfif");
+  backface-visibility: hidden;
+}
